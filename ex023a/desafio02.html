@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dasafio 02 mesclagem de células</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 300px;
+          
+        }
+        td{
+            border: solid 1px black;
+            padding: 10px;
+            text-align: center;
+            border-collapse:collapse ;  
+        }
+        .a:hover{
+            background-image: linear-gradient(to bottom, rgb(222, 106, 106) ,transparent);
+            }
+        .b:hover{
+            background-color: chartreuse;
+            transition: 3s;
+          text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.501);
+          text-transform: uppercase;
+        }
+        
+    </style>
+</head>
+<body>
+     <h1>tabela mesclada</h1>
+    <table>
+        <tr>
+            <td class="a" colspan="4">A</td>
+            
+            <td class="a" rowspan="4">b</td>
+        </tr>
+        <tr>
+            <td class="a" rowspan="4">c</td>
+            <td>d</td>
+            <td>e</td>
+            <td>f</td>
+          
+        </tr>
+        <tr>
+            
+            <td>g</td>
+            <td class="b">h</td>
+            <td>i</td>
+            
+        </tr>
+        <tr>
+            <td>j</td>
+            <td>l</td>
+            <td>m</td>
+            
+        </tr>
+        <tr>
+            <td class="a" colspan="4">n</td>
+            
+        </tr>
+    </table>
+</body>
+</html>

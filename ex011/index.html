@@ -1,0 +1,47 @@
+<!DOCTYPE html:5>
+<html lang="pt-br
+">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML:5</title>
+    <h1> etapas para colocar imagens dinamicas ,imagens que mudam de <br> tamanho de 
+         acordo com o dispositivos que esta sendo exibido(pc/tv/celula)</h1>
+</head>
+<body>
+    <h1>assim disse o politico:<q> estamos em um momento difício</q> </h1>
+    <H1>Imagen dinamica</H1>
+    <p>tente abrir esse site em varios dispositivos ,ou simplismente aumente ou
+         diminua o tamanho do seu navegador</p>
+        <picture>
+           
+            <source media="(max-width:700px )" srcset="imagens/foto-p.png" type="image/png">
+            <source media="(max-width:1000px )" srcset="imagens/foto-m.png" type="image/png">
+           <img src="imagens/foto-g.png" alt="image flexivel">
+        </picture>
+          <h1>reproduzindo audio</h1>
+          <p>vamos aprender a reproduzir audio em HTML:5</p>
+          <p> <a href="https://www.youtube.com/watch?v=6Whgn_iE5uc" target="_blank"> clik aqui e veja o novo clip de Santana</a></p>
+          <a href="https://www.youtube.com/watch?v=6Whgn_iE5uc" target="_blank"><a>
+     
+     <!--formatos de midia (audio)compativeis: MP3/WAV/OGG-->
+     <audio src="midia/cardial.mp3" controls loop ></audio><br><!--dessa forma vai aparecer
+         os cotroles e vai ficar dando loop --> 
+     <audio src="midia/embalo4 funk.mp3" controls></audio><!--dessa forma  sem o loop-->
+     
+     <style>
+        body{
+            background-image:linear-gradient(rgb(251, 36, 36),gray);
+        }
+     </style>
+     
+
+     <p>voce também pode ver os meus <a href ="https://www.youtube.com/watch?v=P7Cz2IPe5J8
+      "target="blank">videos no youtube</a></p>
+        <p>outra pagina minha <a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" target="_self"> youtube</a></p>
+     </body>
+
+    
+
+</html>

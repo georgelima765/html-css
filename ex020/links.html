@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+           
+        }
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: #ef0000;
+        }
+        a:hover{
+           text-decoration: underline;
+           text-decoration-color: rgb(18, 1, 1);
+        }
+        a:active{
+           color: black;
+        }
+        a::before{
+           content: '➩';
+           color: black;
+        }
+       a::after{
+        content: '(link)';
+        text-decoration: none;
+        font-weight: normal;
+        color: black;
+        content: '➪';
+         }
+         
+       div:hover{
+        text-align: center;
+        display: inline-block;
+        
+         }
+       
+        div{
+            border:1px solid black ;
+            height: 300px;
+            width: 300px;
+       
+        
+       
+        background-color: chartreuse;
+        
+        }
+        .especial{
+            background-color: rgb(145, 145, 232);
+        }
+        p::before{
+            content: '✌';
+        }
+        p::after{
+            content: '✌';
+        }
+      
+        
+    </style>
+</head>
+<h1>Personalizando links</h1>
+<ul>
+    <li style="color:aqua ;"><a href="https://gutavoguanabara.github.io" target="_blank">repositorio github</a></li>
+    <li  style="margin:8px ;" ><a href="https://youtube.com/cursoemvideo/" target="_blank">canal do youtube</a></li>
+    <li style="background-color:rgb(107, 158, 158) ; text-align: center; width:300px ;height:100px"id =eu ><a href="https://www.cursoemvideo.com" target="_blank" id="eu">site curso em video <p>faça uma visita,estamos iniciando novos cursos em tecnologia </p></a></li>
+</ul>
+<div id="1">caixa 02</div>
+<div id="2">caixa 01</div>
+<body>
+    
+</body>
+</html>

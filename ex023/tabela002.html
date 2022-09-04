@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <style>
+        body{
+            width: 100%;
+           
+           background-image: url("imagen/mapa-colorido.jpg");
+           height: 753px;
+           background-position: center center;
+           background-repeat: no-repeat;
+           background-size: contain;
+           font-family: Arial, Helvetica, sans-serif;
+        }
+        tbody >tr:nth-child(odd){/*efeito zebrado odd( linhas impares)*/
+            background-color: aqua;
+        }
+        tbody >tr:nth-child(even){/*efeito zebrado even( linhas pares)*/
+            background-color: rgb(143, 79, 175);
+        }
+        h1{
+            text-align: center;
+        }
+        table{
+            border-collapse: collapse;
+            min-width: 360px;
+            max-width:400px ;
+            
+             background-size: cover;
+             background-color: rgba(55, 42, 42, 0.389);
+             margin: auto;
+             position: relative;/*usar position:relative para deixar o cabeçalho fixo*/
+             
+           
+        }
+        td,th{
+             border: solid 1px black;
+             padding: 10px;
+            text-align: center;
+        }
+        thead,tfoot{
+            background-color: rgb(225, 192, 108);
+        }
+        thead > tr > th{/*efeito cabeçalho fixo e texto rolando*/
+            position: sticky;/* grudado*/
+            top: -1%;
+            background-color: rgb(225, 192, 108) ;
+
+        }
+        .ho{
+            background-color: brown;
+        }
+       td.num{
+        text-align: right;
+       }
+       td.nom{
+        text-align: left;
+       }
+       td.nom:hover{
+        color: aliceblue;
+       background-image: linear-gradient(to left,transparent,green, rgb(21, 115, 209));
+        transition: 1s;
+        
+        
+       }
+       td.nom:active{
+        color: rgb(109, 180, 50);
+        }
+       li{
+       margin: auto;
+       min-width: 360px;
+            max-width:400px ;
+       }
+       caption{
+        background-color: rgb(118, 128, 108);
+        font-weight: bolder;
+        padding: 10px;
+       }
+    </style>
+</head>
+<body>
+    <h1>uso de tabelas grandes</h1>
+
+  
+    <table><!--tabela-->
+        <caption>População das unidades federativas</caption>
+        <thead><!--cabeça da tabela-->
+            <tr>
+                <th scope="col">estado</th>
+                <th scope="col">população</th>
+                <th class="ho"> fuso horário</th>
+            </tr>
+        </thead><!--cabeça da tabela-->
+        <tbody><!--corpo da tabela-->
+            <tr>
+                <td class="nom">Acre (AC)</td>
+                <td class="num">869.26</td>
+                <td>00:00</td> 
+            </tr>
+             <tr>
+                <td class="nom">Alagoas (AL) </td>
+                <td class="num">3.322.820 </td>
+                <td>00:00</td>
+             </tr>
+             <tr>
+                <td class="nom"> Amapá (AP)</td>
+                <td class="num">829.494</td>
+                <td>00:00</td>
+             </tr>
+             <tr>
+                <td class="nom">Amazonas (AM)</td>
+                <td class="num">4.080.611</td>
+                <td>00:00</td>
+             </tr>
+             <tr>
+                <td class="nom">Bahia (BA)</td>
+                <td class="num">14.812.617</td>
+                <td>00:00</td>
+             </tr>
+             <tr>
+                <td class="nom">Ceará (CE)</td>
+                <td class="num">9.075.649</td>
+                <td>00:00</td>
+             </tr>
+             <tr>
+                <td class="nom">Distrito Federal (DF)</td>
+                <td class="num">2.974.703</td>
+                <td>00:00</td>
+             </tr>
+             <tr>
+                <td class="nom">Espírito Santo (ES)</td>
+                <td class="num">3.972.388</td>
+                <td>00:00</td>
+             </tr>
+             <tr>
+                <td class="nom">Goiânia (GO)</td>
+                <td class="num">6.921.161</td>
+                <td>00:00</td>
+             </tr>
+             <tr>
+                <td class="nom">Maranhão (MA)</td>
+                <td class="num">7.035.055</td>
+                <td>00:00</td>
+             </tr>
+             <tr>
+                <td class="nom">Mato Grosso (MT)</td>
+                <td class="num">3.441.998</td>
+                <td>00:00</td>
+             </tr>
+             <tr>
+                <td class="nom">Mato Grosso do Sul (MS)</td>
+                <td class="num">2.748.023</td>
+                <td>00:00</td>
+             </tr>
+             <tr>
+                <td class="nom">Minas Gerais (MG)</td>
+                <td class="num">21.040.662</td>
+                <td>00:00</td>
+             </tr>
+        </tbody><!--corpo da tabela-->
+        <tfoot><!--roda pé da tabela-->
+            <tr>
+                <th scope="row">total de habitantes</th>
+                <td><strong>234 234 76</strong></td>
+                <td class="ho">fuso horário</td>
+            </tr>
+        </tfoot><!--roda pé-->
+    </table><!--tabela--> 
+    <vl><br> 
+        <li><strong>Norte</strong>: 449 cidades</li><br>
+        <li><strong>Nordeste</strong>: 1794 cidades</li><br>
+        <li><strong>Sudoeste</strong>: 1668 cidades</li><br>
+        <li><strong>Centro-Oeste</strong>: 466 cidades</li>
+    </vl> <p class="tex" style="font-size: larger;color: rgb(255, 0, 4);" >Pirâmide etária e expectativa de vida no país</p>
+</body>
+<style>
+  .tex:hover{
+    text-transform: capitalize;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.687);
+    text-decoration: double;
+   }
+</style>
+</html>

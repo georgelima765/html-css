@@ -1,0 +1,52 @@
+@charset "UTF-8";
+  
+div{/*codgo de formação e alinhamento de um circulo (direita,esquerda ,cima e baixo*/
+    background-color: rgb(173, 155, 154);
+     width: 330px;
+    height: 315px;
+    margin-top: 109px;/* deslocamento para cima e bara baixo*/
+    margin-left: 144px;/* deslocamento direita esquerda*/
+    border-radius:50%;/*curvatura das bordas geral*/
+}
+
+
+div p{
+    padding-top: 67px;/* deslocamento do texto para cima e para baixo*/
+    padding-left: 22px;/* deslocamento do texto para a esquerda*/
+    padding-right: 29px;/* deslocamento do texto para direita*/
+    text-align: justify;
+    font-size: 10px;/* tamanho das letras*/
+    /*margin-left: 10px;
+    margin-right: 10px; esses dois codigos fazen a mesma função do padding top e left*/
+   
+}
+ .p1{
+background-color: black;
+color: white;
+width: 330px;
+height: 315px;
+margin-top: 109px;   /* deslocamento para cima e bara baixo*/
+margin-left: 144px;  /* deslocamento direita esquerda*/
+border-radius:50%;
+
+}
+.video{
+    margin-left: 20px;
+    padding-left: 20px;
+    padding: 76px;
+    padding-bottom: 41%;
+    position: relative;
+    background-color: white;
+    box-shadow:5px black ;
+    
+}
+.video>iframe{
+    position: absolute;
+    top: -498px;
+    left: 373px;
+    width: 282px;
+    height: 174px;
+    border-radius: 10px;
+  
+}
+

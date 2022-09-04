@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina 1/tabela</title>
+    
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(47, 79, 79, 0.446);
+        }
+        table{
+         
+            width: 100%;
+            min-width: 360px;
+            max-width: 800px;
+            border-collapse: collapse;
+            margin: auto;
+          
+           
+            
+        }
+        caption{
+        font-size: x-large;
+            font-weight: bolder;
+           padding: 4px;
+           border: solid 0.5px black;
+           background-color: aliceblue;
+        }
+        th,td,tr{
+            border: solid 1px black;
+            border-collapse: collapse;
+        }
+       .nome{
+        background-color: aqua;
+        
+       }
+       .sexo{
+        background-color: chartreuse;
+      
+       }
+        .idade{
+            background-color: rgb(178, 55, 55);
+        }
+      
+     
+     .renda{
+        background-color: chocolate;
+     }
+   
+       .profissão{
+        background-color: cadetblue;
+       }
+       td:hover{
+        background-color: brown;
+       }
+       tr:hover{
+        background-color: white;
+        }
+      th:hover{
+      background-color: darksalmon;
+      }
+      p{
+      text-align: right;
+      padding-right: 30px;
+      font-style: italic;
+      }
+       .total:hover{
+        transition: 1s;
+        text-decoration: underline;
+        background-color: white;
+        
+       
+       }
+
+    
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center ;">Exercício de tabela</h1>
+    <table>
+        <colgroup>
+            <col class="nome">
+            <col class="sexo">
+            <col class="idade">
+            <col class="profissão">
+            
+        </colgroup>
+        
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col ">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th class="cor" scope="col">Profissão</th>
+           
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>Feminino</td>
+            <td>25</td>
+            <td>Jornalista</td>
+
+        </tr>
+        <tr>
+            <td>Claudio Sousa</td>
+            <td>Masculino</td>
+            <td>30</td>
+            <td>Médico</td>
+        </tr>
+        <tr class="destaq">
+            <td >Paulo Luiz</td>
+            <td>Feminino</td>
+            <td>40</td>
+            <td>Padeiro</td>
+        </tr>
+        <tr class="musico">
+            <td>Naldo Santos</td>
+            <td>Feminino</td>
+            <td >55</td>
+            <td>Músico</td>
+        </tr>
+        <tr>
+            <td>Souza Bastos</td>
+            <td>Feminino</td>
+            <td>59</td>
+            <td>Pedreiro</td>
+        </tr>
+        <tr>
+            <td>Maria Silva</td>
+            <td>Feminino</td>
+            <td>65</td>
+            <td>Diarista</td>
+        </tr>
+        <tr>
+            <th>Cidade</th>
+            <th>População</th>
+            <th>Renda $</th>
+            <th>Área</th>
+           </tr>
+          <tr>
+            <th>Jequie</th>
+            <td>150 mil</td>
+            <td>4.000</td>
+            <td>20.000 m<sup>2</sup></td>
+          </tr>
+          <tr>
+            <th rowspan="5">carros</th>
+            <th>Modelo</th>
+            <th>Cor</th>
+            <th>Valor</th>
+           
+          </tr>
+          <tr>
+            <td>Fusca</td>
+            <td>Vermelho</td>
+            <td>10.000 mil</td>
+           
+          </tr>
+          <tr>
+            <td>Focus</td>
+            <td>Cinza</td>
+            <td>20.000 mil</td>
+          </tr>
+          <tr>
+            <td>Palio</td>
+            <td>Branco</td>
+            <td>15.000 mil</td>
+          </tr>
+          <tr>
+            <td>Gol</td>
+            <td>Azul</td>
+            <td>12.000 mil</td>
+          </tr>
+          
+         <tfoot>
+            <th>Dados aleatórios</th>
+            <td>Modelo</td>
+            <td>Cor</td>
+            <td class="total">Total $ 57.000</td>
+         </tfoot>
+    </table>
+          <p>pagina 2 👉<a href="file:///C:/Users/george%20lima/Documents/estudo/html-css/ex023a/desafio04.html" target="_blank"> clic</a></p>
+</body>
+</html>

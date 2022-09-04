@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>uso de ifame</title>
+    <style>
+        iframe{
+            width: 95vw;
+            height: 400px;
+            border: solid black;
+           
+        }
+        iframe.foto{
+            width: 400px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In illum blanditiis ipsum explicabo cupiditate itaque nemo nobis laboriosam assumenda ad distinctio, corrupti quos a pariatur incidunt doloribus aliquam consectetur eos.</p>
+    <!--nesse exemplo as paginas abrem dentro do iframe-->
+    <ul>
+        <li><a href="pagteste.html" target="ifr"  >primeira pagina</a></li>
+        <li><a href="https://www.mercadolivre.com.br/" referrerpolicy="no-referrer" target="ifr">segunda pagina</a></li>
+        <li><a href="" target="ifr">terçeira pagina</a></li>
+    </ul>
+    <iframe class="foto" name="ifr"  srcdoc="<h1> escolha uma pagina das opções acima</h1><img src='imagens/eu mesmo.jpg'>"  >
+
+
+
+        <p>infelismente seu navegador não  é compativel</p>
+    </iframe>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, repellat quas! Tempora placeat voluptatibus animi numquam non obcaecati nihil. Nam, rerum officiis. Reprehenderit aliquam excepturi ea harum! Sit, provident officia.</p>
+</body>
+</html>

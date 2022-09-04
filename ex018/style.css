@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+main{
+    background-color: aliceblue;
+   font-style: italic;
+   font-weight: 100;
+   border-radius: 10px;
+   width: 400px;
+   height: 400px;
+   padding: 10px;
+   margin: auto;
+   text-align: justify;
+   background-attachment: fixed;
+   
+}
+p{
+   
+    color: rgb(8, 9, 6);
+    font-style:initial;
+   
+    }
+h1{
+    text-align: center;
+    text-shadow: 1px 1px 4px;
+}
+body{
+    background-image: linear-gradient(to left ,rgb(98, 189, 245),rgb(139, 247, 171));
+}
