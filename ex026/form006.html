@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<style>
+    form{
+      background-color: darkturquoise;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-style: normal;
+        font-weight: bolder;
+        display: inline-block;
+        margin: 0px;
+       border: solid 1px black;
+
+
+    }
+</style>
+<body>
+    <h1>Formulário</h1>
+
+    <form action="cadastro.php" method="post"autocomplete="on"><!--USAR O METÓDO POSTE QUANDO O CADASTRO FOR DE IMAGENS-->
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="icor">cor</label>
+                <input type="color" name="cor" id="icor">
+            </p>
+            <p>
+                <label for="inivel">nivel de satisfação</label>
+                <input type="range" name="nivel" id="inivel" min="0" max="10">
+            </p>
+            <p><label for="ifile">foto do perfil</label>
+            <input type="file" name="file" id="ifile" required></p>
+            <p>
+                <input type="submit" value="enviar">
+                <input type="reset" value="limapar">
+            </p>
+        </fieldset>
+    </form>
+
+    
+</body>
+</html>
