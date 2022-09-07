@@ -1,2 +1,7 @@
 @charset "UTF8";
-/*APARELHO DEITADO*/
+
+/*aparelho deitado*/
+
+body{
+    background-color: chartreuse;
+}

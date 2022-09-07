@@ -1,2 +1,7 @@
 @charset "UTF8";
-/*APARELHO EM PÉ*/
+
+/*aparelho em pé*/
+
+body{
+    background-color: aqua;
+}
