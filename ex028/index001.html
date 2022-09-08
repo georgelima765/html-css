@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+        * {
+           
+          box-sizing: border-box;
+        }
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        div.ca{
+            margin-top: -21px;
+            padding-bottom: 25px;
+            padding-left: 25px;
+            padding-top: 18px;
+                }
+       
+        .menu {
+          float: left;
+          width: 20%;
+        }
+        .menuitem {
+          padding: 8px;
+          margin-top: 7px;
+          border-bottom: 1px solid #f1f1f1;
+        }
+        .main {
+          float: left;
+          width: 60%;
+          padding: 0 20px;
+          overflow: hidden;
+          text-align: justify;
+          text-indent: 10px;
+          margin: auto;
+         }
+     .main > p{
+      
+        padding-left: 10px;
+        padding-right: 10px;
+         }
+        a.veja:hover{
+         
+          color: red;
+          border: solid 1px black;
+        padding: 5px;
+        border-radius: 20%;
+        }
+        a.veja{
+            text-decoration: none;
+        }
+        .menu:hover{
+            font-weight: bolder;
+            color: blue;
+        }
+       
+        .right {
+          background-color: rgb(71, 143, 237);
+          float: left;
+          width: 20%;
+          padding: 10px 15px;
+          margin-top: 7px;
+        }
+        
+        @media only screen and (max-width:800px) {
+          /* For tablets: */
+          .main {
+            width: 80%;
+            padding: 0;
+          }
+          .right {
+            width: 100%;
+          }
+        }
+        @media only screen and (max-width:500px) {
+          /* For mobile phones: */
+          .menu, .main, .right {
+            width: 100%;
+          }
+        }
+        </style>
+</head>
+<body> 
+     
+        <div class="ca"  style="background-color:rgb(38, 38, 230) ; color: rgb(250, 245, 245); font-family: Arial, Helvetica, sans-serif;text-shadow: 3px 3px 3px rgba(17, 63, 231, 0.429); ">
+          <h1>Posicione seu dispositivo</h1>
+          <h3>Adaptação das imagens em telas de tamanhos diferentes</h3>
+        </div>
+        
+        <div style="overflow:auto">
+          <div class="menu">
+            <div class="menuitem">Celular</div>
+            <div class="menuitem">Tablete</div>
+            <div class="menuitem">Notebook</div>
+            <div class="menuitem">Tv tela grande</div>
+          </div>
+        
+          <div class="main">
+            <h2 style="background-image: linear-gradient(to right, blue, transparent);">Curso em video</h2>
+            <p>Antes mesmo dessa história toda de web design responsivo, já existiam media types. Inclusive, tecnicamente, media queries são media types. Há não mais que 1 década atrás, não era incomum encontrar algo parecido com: Quer dizer, este CSS só entra em ação, só modifica os estilos do site, quando se tratar de impressão. print é um tipo de media; um med...</p>
+            <p><a class="veja" href="https://desenvolvimentoparaweb.com/css/media-queries/" target="_blank">⇨ veja a lista completa aqui: ⇦</a></p>
+
+            <img src="imagens/cev-landscape.jpg" style="width:100%">
+          </div>
+        
+          <div class="right">
+            <h2>O básico sobre Media Queries</h2>
+            <p>Conheça o básico sobre Media Queries para usá-las com mais consciência (e saber a diferença entre media query e breakpoint).</p>
+            <h2>O que é?</h2>
+            <p>Uma media query consiste de um media type e pelo menos uma expressão que limita o escopo das folhas de estilo usando media features, tal como largura, altura e cor. Media queries</p>
+            <h2>Onde é empregada?</h2>
+            <p>O Media Query é um recurso do CSS que permite que sejam criadas customizações levando-se em consideração o tamanho da tela que está renderizando a pagina web...</p>
+          </div>
+        </div>
+        
+        
+        <div style=" font-weight: bold; background-color:#1978e3;text-align:center;padding:10px;margin-top:7px;font-size:12px,;" > Este site foi desenvolvido por George Lima no<a class="veja" href="https://www.cursoemvideo.com/" target="_blank"> cusro em video</a> do Prof.<a class="veja" href="https://github.com/gustavoguanabara" target="_blank">Gustavo Guanabara</a></div>
+        
+</body>
+</html>
