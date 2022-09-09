@@ -1,0 +1,62 @@
+@charset "UTF8";
+ /*versão mobile first*/
+
+ *{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+ }
+ html{
+    height: 100vh;
+ } 
+ body{
+    background: black url(../imagens/back-tv.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+ }
+ main{
+    background-color: rgba(255, 255, 255, 0.575);
+    width: 90%vw;
+    margin: auto;
+    border-radius: 0px 0px 10px 10px;
+    padding: 10px;
+    margin-top: 10px;
+   
+    
+ }
+ 
+ h1{
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-size: 2em;
+ }
+ img{
+    display: block;
+    margin: auto;
+ }
+ #phone{
+    display: block;
+    
+ }
+ #tablet{
+    display: none;
+ }
+ #print{
+    display: none;
+ }
+ #pc{
+    display: none;
+    
+ }
+ #tv{
+    display: none;
+ }
+ footer{
+   background-color: rgb(66, 145, 171);
+   margin-top: 432px;
+   padding: 38px;
+  }
