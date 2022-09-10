@@ -1,39 +1,57 @@
 @charset "UTF8";
  /*versão mobile first*/
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+
+
 
  *{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+   
  }
  html{
     height: 100vh;
+    height: 10vh;
+    
+   
  } 
  body{
-    background: black url(../imagens/back-tv.jpg) no-repeat;
-    background-size: cover;
-    background-position: center center;
+    background-color: black;
+   
+ 
 
  }
  main{
-    background-color: rgba(255, 255, 255, 0.575);
-    width: 90%vw;
+    background-color: rgb(5, 5, 5);
+    
     margin: auto;
     border-radius: 0px 0px 10px 10px;
     padding: 10px;
-    margin-top: 10px;
+  
+
+   }
+header h1{
+   color:black;
+   text-align: center;
+   margin: auto;
+   font-family: 'Rye', cursive;
+   font-size: 40px;
+  
+   padding: 30px;
+   text-shadow: 2px 2px 2px black;
+   margin-right: 16px;
+ }
+ header{
+   margin: 0%;
+   padding: 0%;
+   display: block;
+   border-radius: 20%;
+  background-color:white;
    
-    
  }
- 
- h1{
-    text-align: center;
-    color: white;
-    text-shadow: 2px 2px 2px black;
-    font-size: 2em;
- }
+
  img{
     display: block;
     margin: auto;
@@ -54,6 +72,9 @@
  }
  #tv{
     display: none;
+ }
+ header > menu > li{
+   padding-left: 45px;
  }
  footer{
    background-color: rgb(66, 145, 171);

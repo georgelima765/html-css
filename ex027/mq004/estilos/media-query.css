@@ -43,11 +43,12 @@
 @media screen and (min-width: 768px) and (max-width: 992px) { /*TABLET*/
     
     body {
-      background-image: url(../imagens/back-tv.jpg);
+      background-color: black;
       
     }
+   
     main{
-        width: 400px;
+        width: 800px;
      }                  
     img{
         display: block;
@@ -71,15 +72,16 @@
 }
 @media  screen and (min-width: 992px) and (max-width: 1200px) { /*DESKTOP*/ 
      body{
-        background-image: url(../imagens/back-tv.jpg);
+       background-color: black;
      }
     img{
         display: block;
         margin: auto;
      }
      main{
-        width: 400px;
-     }                  
+        width: 900px;
+     } 
+                     
      
      
      #phone{
@@ -101,10 +103,10 @@
 }
 @media screen and (min-width: 1200px) { /*GRANDES TELAS*/
     body{
-        background-image: url(../imagens/back-tv.jpg);
+        background-color: black;
     }
     main{
-        width: 700px;
+        width: 900px;
     }
     img{
         display: block;

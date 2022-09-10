@@ -1,0 +1,20 @@
+@charset "UTF=8";
+
+@media screen and (min-width: 768px) {
+    i#burguer{
+        display: none;
+    }
+    menu{
+        display: block;
+    }
+    menu > ul > li{
+        display: inline-block;
+    }
+    main{/* comando para o parágrafo dentro do main crecer ate 768px*/
+        width: 768px;
+        
+       }
+    main{
+       
+    }
+}
